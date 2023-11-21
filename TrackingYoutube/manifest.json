@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Record of tracking video Youtube",
+  "version": "1.0.0",
+  "description": "Record what you have watched on Youtube",
+  "author": "Nguyen Minh Nhat",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "css":[
+        "style/style.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "geolocation",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webNavigation",
+    "identity",
+    "identity.email",
+    "webRequest"
+    ,"webRequestBlocking"
+  ]
+}
