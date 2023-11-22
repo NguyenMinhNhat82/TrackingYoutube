@@ -12,6 +12,9 @@
     "default_popup": "popup/popup.html",
     "default_icon": "images/logo.png"
   },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline';script-src 'sha256-Fa5vlW5BK6xr0reYc5PTPiKzjcJbw14AA2Z01zoNm7o="
+},
   "content_scripts": [
     {
       "js": [
