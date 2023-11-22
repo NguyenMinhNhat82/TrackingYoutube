@@ -12,7 +12,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
                     url: 'popup/popupAlert.html',
                     type: 'popup',
                     width: 550,
-                    height: 200,
+                    height: 284,
                     left: (1000) - (550 / 2),
                     top: (928 / 2) - (200 / 2)
                 });
@@ -37,7 +37,7 @@ chrome.tabs.onCreated.addListener(function (tab) {
             url: 'popup/popupAlert.html',
             type: 'popup',
             width: 550,
-            height: 200,
+            height: 284,
             left: (1000) - (550 / 2),
             top: (928 / 2) - (200 / 2)
         });
@@ -55,7 +55,7 @@ chrome.tabs.onActivated.addListener(function (activeInfo) {
                         url: 'popup/popupAlert.html',
                         type: 'popup',
                         width: 550,
-                        height: 200,
+                        height: 284,
                         left: (1000) - (550 / 2),
                         top: (928 / 2) - (200 / 2)
                     });

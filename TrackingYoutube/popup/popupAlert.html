@@ -13,11 +13,18 @@
      rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
        crossorigin="anonymous"> 
+       <script>
+          document.getElementById("ok-button").addEventListener("click",()=>{
+            window.open('','_self').close()
+          })
+       </script>
   </head>
   <body>
     <div class="container" id="main">
-      <h1 id ="content" class="text-center">Record Tracking Youtube</h1>
+      <img class="text-center" src="https://res.cloudinary.com/dexbjwfjg/image/upload/v1700647608/danger_ldk92w.png" id="alert" alt="Girl in a jacket">
+      <h1 id ="content" class="text-center">Thông báo</h1>
       <h3 class="text-center">Bạn chưa xem xong video!!!</h3>
+      <button id="ok-button" type="button" class="btn btn-success text-center">OK</button>
     </div>
   </body>
 </html>
